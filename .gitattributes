@@ -1,0 +1,9 @@
+# Ignore Android/iOS build and dependency folders for language stats
+android/** linguist-vendored
+ios/Pods/** linguist-vendored
+build/** linguist-vendored
+.gradle/** linguist-vendored
+*.lock linguist-vendored
+
+# Mark Dart files explicitly
+*.dart linguist-language=Dart
