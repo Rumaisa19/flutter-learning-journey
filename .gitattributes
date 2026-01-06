@@ -1,9 +1,8 @@
-# Ignore Android/iOS build and dependency folders for language stats
-android/** linguist-vendored
-ios/Pods/** linguist-vendored
-build/** linguist-vendored
-.gradle/** linguist-vendored
-*.lock linguist-vendored
+# Folders to ignore (e.g., build files or C++ dependencies)
+ios/Pods/* linguist-vendored
+android/app/src/main/cpp/* linguist-vendored
 
-# Mark Dart files explicitly
-*.dart linguist-language=Dart
+
+*.cpp linguist-detectable=false
+*.h linguist-detectable=false
+*.dart linguist-detectable=true
